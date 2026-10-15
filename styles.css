@@ -1474,10 +1474,6 @@ section .reveal.visible {
   margin-bottom: var(--space-xl);
 }
 
-.gallery__header .section-label {
-  justify-content: center;
-}
-
 .gallery__header h2 {
   margin-bottom: var(--space-sm);
 }
