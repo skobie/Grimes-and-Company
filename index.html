@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grimes & Company | Premium Cleaning Services in Arizona</title>
+    <meta name="description" content="The Grimes & Company is a local Arizona cleaning company. Family run and owned, we take great pride in our work. Short term rentals, residential, and commercial cleaning services.">
+    <meta name="keywords" content="cleaning services, Arizona cleaning, short term rental cleaning, residential cleaning, Queen Creek, premium cleaning">
+    <meta property="og:title" content="The Grimes & Company | Premium Cleaning Services">
+    <meta property="og:description" content="Family-owned Arizona cleaning company. Short term rentals, residential, and commercial cleaning services.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════════════
+         HEADER / NAVIGATION
+         ═══════════════════════════════════════════════════ -->
+    <header class="header header--transparent" id="header">
+        <div class="header__inner">
+            <!-- Logo -->
+            <a href="#" class="header__logo" id="header-logo">
+                <img src="images/logo.jpg" alt="Grimes & Co Logo" class="header__logo-img">
+                <span class="header__logo-text">Grimes <span>&</span> Co.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav" id="desktop-nav">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#hero" class="nav__link nav__link--active" id="nav-home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav__link" id="nav-short-term">Short Term Rentals</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="nav__link" id="nav-residential">Residential</a>
+                    </li>
+                    <li>
+                        <a href="#team" class="nav__link" id="nav-team">Our Team</a>
+                    </li>
+                    <li class="nav__dropdown">
+                        <a href="#location" class="nav__link nav__dropdown-trigger" id="nav-locations">
+                            Locations
+                            <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="nav__dropdown-menu">
+                            <a href="#location" class="nav__dropdown-link" id="nav-queen-creek">Queen Creek</a>
+                            <a href="#location" class="nav__dropdown-link" id="nav-gilbert">Gilbert</a>
+                            <a href="#location" class="nav__dropdown-link" id="nav-mesa">Mesa</a>
+                            <a href="#location" class="nav__dropdown-link" id="nav-chandler">Chandler</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link" id="nav-merch">Merch</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="header__cta">
+                <a href="#contact" class="btn btn--gold" id="nav-book-now">Book Now</a>
+            </div>
+
+            <!-- Hamburger (Mobile) -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav__overlay" id="mobile-overlay"></div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="#hero" class="mobile-nav__link">Home</a>
+        <a href="#services" class="mobile-nav__link">Short Term Rentals</a>
+        <a href="#services" class="mobile-nav__link">Residential</a>
+        <a href="#team" class="mobile-nav__link">Our Team</a>
+        <a href="#location" class="mobile-nav__link">Locations</a>
+        <a href="#" class="mobile-nav__link">Merch</a>
+        <a href="#contact" class="btn btn--gold" style="margin-top: auto; text-align: center;">Book Now</a>
+    </nav>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="images/photos/IMG_1012.jpg" alt="Professional cleaning service" id="hero-bg-image">
+        </div>
+        <div class="hero__overlay"></div>
+
+        <div class="hero__content">
+            <div class="hero__logo">
+                <img src="images/logo.jpg" alt="Grimes & Company Logo" id="hero-logo">
+            </div>
+            <h1 class="hero__title">
+                The Grimes <span>&</span> Company
+            </h1>
+            <p class="hero__subtitle">
+                Family-owned Arizona cleaning company — cleaning all of Arizona, one day at a time.
+            </p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--gold" id="hero-book-btn">
+                    Book Now
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn--white" id="hero-learn-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         ABOUT / MORE THAN A LAST NAME
+         ═══════════════════════════════════════════════════ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image-wrapper about__image-wrapper--photo reveal" id="about-image">
+                    <img src="images/photos/IMG_7873.jpeg" alt="Papa Wayne Grimes with family, smiling together outdoors">
+                    <div class="about__accent"></div>
+                </div>
+                <div class="about__content reveal reveal-delay-1">
+                    <span class="section-label">About Us</span>
+                    <h2>More Than a Last Name</h2>
+                    <p>
+                        To me, Grimes has always meant more than just a last name.
+                    </p>
+                    <p>
+                        When Wayne “Papa” Grimes became part of my nana’s life, he also chose to become a father to my mom, April “Mama” Grimes, and my aunt, Tami “Gogo” Grimes. He adopted them both without hesitation, loved them as his own, and gave them the Grimes name — a name I’m incredibly proud to carry today.
+                    </p>
+                    <p>
+                        That story has shaped what family means to me. Family isn’t always defined by blood. Sometimes it’s the people who choose you, show up for you, love you, and become family along the way.
+                    </p>
+                    <p>
+                        That same meaning carries into The Grimes &amp; Company. We are proudly family owned and operated, but not everyone who makes up our family is related by blood. Some are relatives, some are friends, and some are people who simply became family through the years.
+                    </p>
+                    <p>
+                        This company carries the Grimes name because to me, that name represents love, loyalty, hard work, and choosing to show up for the people around you.
+                    </p>
+                    <p>
+                        Papa Wayne gave our family the Grimes name, and it’s a name I’m incredibly proud to carry, build on, and one day pass down to my own children.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         SERVICES
+         ═══════════════════════════════════════════════════ -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="services__header reveal">
+                <span class="section-label">Our Services</span>
+                <h2>Premium Cleaning Solutions</h2>
+                <p>Whether it's a vacation rental turnover or a full residential deep clean, we bring the same meticulous attention to detail.</p>
+            </div>
+
+            <div class="services__grid">
+                <!-- Service Card 1 -->
+                <div class="service-card reveal reveal-delay-1" id="service-residential">
+                    <div class="service-card__image">
+                        <img src="images/photos/IMG_1002.jpg" alt="Luxury residential home">
+                        <div class="service-card__image-overlay"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Residential Cleaning</h3>
+                        <p class="service-card__text">
+                            Complete home cleaning solutions tailored to your needs. From routine maintenance to deep cleans, we make your home sparkle.
+                        </p>
+                        <a href="#contact" class="service-card__link" id="residential-learn-more">
+                            Learn More
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card reveal reveal-delay-2" id="service-short-term">
+                    <div class="service-card__image">
+                        <img src="images/photos/IMG_1022.jpg" alt="Luxury short term rental bathroom">
+                        <div class="service-card__image-overlay"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Short Term Rentals</h3>
+                        <p class="service-card__text">
+                            Expert turnover cleaning for Airbnb, VRBO, and vacation rentals. Fast, thorough, and ready for your next guest.
+                        </p>
+                        <a href="#contact" class="service-card__link" id="rental-learn-more">
+                            Learn More
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card reveal reveal-delay-3" id="service-commercial">
+                    <div class="service-card__image">
+                        <img src="images/photos/IMG_1016.jpg" alt="Modern office space">
+                        <div class="service-card__image-overlay"></div>
+                    </div>
+                    <div class="service-card__body">
+                        <h3 class="service-card__title">Commercial Spaces</h3>
+                        <p class="service-card__text">
+                            Professional cleaning for offices, retail spaces, and commercial properties. Maintain a pristine environment for your business.
+                        </p>
+                        <a href="#contact" class="service-card__link" id="commercial-learn-more">
+                            Learn More
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         OUR TEAM
+         ═══════════════════════════════════════════════════ -->
+    <section class="team section section--light" id="team">
+        <div class="container">
+            <div class="team__header reveal">
+                <span class="section-label">Our People</span>
+                <h2>Meet The Team</h2>
+                <p>The dedicated professionals who make the magic happen.</p>
+            </div>
+            
+            <div class="team__grid">
+                <!-- Team Member 1 (Tatum & Jess) -->
+                <div class="team-card reveal">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 5px;">Tatum (Left) & Jess (Right)</h3>
+                            <p style="font-size: 0.75rem; margin-bottom: 5px;">Owner<br>tatum@thegrimesandcompany.com<br>Pronounced "Tay-tum"</p>
+                            <p style="font-size: 0.75rem;">Co Owner<br>jess@thegrimesandcompany.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card reveal reveal-delay-1">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">Tyler</h3>
+                            <p class="team-card__role">Cleaning Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card reveal reveal-delay-2">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">Tea</h3>
+                            <p class="team-card__role">Cleaning Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card reveal">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">Stephen</h3>
+                            <p class="team-card__role">Cleaning Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="team-card reveal reveal-delay-1">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">April</h3>
+                            <p class="team-card__role">Cleaning Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="team-card reveal reveal-delay-2">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">Mackenzie</h3>
+                            <p class="team-card__role">Cleaning Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 7 -->
+                <div class="team-card reveal">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">Jacob</h3>
+                            <p class="team-card__role">Cleaning Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 8 -->
+                <div class="team-card reveal reveal-delay-1">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">Kendall</h3>
+                            <p class="team-card__role">Social Media/Assistant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 9 -->
+                <div class="team-card reveal reveal-delay-2">
+                    <div class="team-card__circle">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <div class="team-card__circle-inner">
+                            <h3 class="team-card__name">Tom</h3>
+                            <p class="team-card__role">Admin and Invoicing <span style="background: var(--color-gold); color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; margin-left: 4px;">New</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         GALLERY
+         ═══════════════════════════════════════════════════ -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="gallery__header reveal">
+                <span class="section-label">Our Work</span>
+                <h2>Spotless Results</h2>
+                <p>Take a look at some of the luxury spaces we maintain to the highest standards.</p>
+            </div>
+            
+            <div class="gallery__grid">
+                <!-- Row 1 -->
+                <div class="gallery__item reveal">
+                    <img src="images/photos/IMG_1006.jpg" alt="Pristine bathroom">
+                </div>
+                <div class="gallery__item reveal reveal-delay-1">
+                    <img src="images/photos/IMG_1008.jpg" alt="Clean laundry room">
+                </div>
+                <div class="gallery__item reveal reveal-delay-2">
+                    <img src="images/photos/IMG_1013.jpg" alt="Spotless living room">
+                </div>
+                <!-- Row 2 -->
+                <div class="gallery__item reveal">
+                    <img src="images/photos/IMG_1024.jpg" alt="Luxury walk-in closet">
+                </div>
+                <div class="gallery__item reveal reveal-delay-1">
+                    <img src="images/photos/IMG_1025.jpg" alt="Neat bedroom">
+                </div>
+                <div class="gallery__item reveal reveal-delay-2">
+                    <img src="images/photos/IMG_1027.jpg" alt="Elegant master bedroom">
+                </div>
+                <!-- Additional Photos -->
+                <div class="gallery__item reveal">
+                    <img src="images/photos/IMG_1003.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-1">
+                    <img src="images/photos/IMG_1004.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-2">
+                    <img src="images/photos/IMG_1005.jpg" alt="Clean space">
+                </div>
+                
+                <div class="gallery__item reveal">
+                    <img src="images/photos/IMG_1007.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-1">
+                    <img src="images/photos/IMG_1009.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-2">
+                    <img src="images/photos/IMG_1010.jpg" alt="Clean space">
+                </div>
+                
+                <div class="gallery__item reveal">
+                    <img src="images/photos/IMG_1011.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-1">
+                    <img src="images/photos/IMG_1014.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-2">
+                    <img src="images/photos/IMG_1015.jpg" alt="Clean space">
+                </div>
+
+                <div class="gallery__item reveal">
+                    <img src="images/photos/IMG_1017.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-1">
+                    <img src="images/photos/IMG_1018.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-2">
+                    <img src="images/photos/IMG_1020.jpg" alt="Clean space">
+                </div>
+
+                <div class="gallery__item reveal">
+                    <img src="images/photos/IMG_1021.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-1">
+                    <img src="images/photos/IMG_1023.jpg" alt="Clean space">
+                </div>
+                <div class="gallery__item reveal reveal-delay-2">
+                    <img src="images/photos/IMG_1026.jpg" alt="Clean space">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         TESTIMONIALS
+         ═══════════════════════════════════════════════════ -->
+    <section class="testimonials section section--dark" id="testimonials">
+        <div class="container">
+            <div class="testimonials__header reveal">
+                <span class="section-label">Testimonials</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+
+            <div class="testimonials__carousel" id="testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card active" data-index="0">
+                    <div class="testimonial-card__stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="testimonial-card__quote-mark">"</div>
+                    <p class="testimonial-card__text">
+                        The Grimes and Company Cleaning did an outstanding job with my clean! I recently moved out of an apartment and was able to send over all of the requirements from the apartment complex in order to receive my deposit back. The clean was outstanding and I received my full deposit! Communication was excellent and I could not recommend The Grimes and Company enough!
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">S</div>
+                        <div>
+                            <div class="testimonial-card__name">Satisfied Client</div>
+                            <div class="testimonial-card__role">Move-Out Clean</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" data-index="1">
+                    <div class="testimonial-card__stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="testimonial-card__quote-mark">"</div>
+                    <p class="testimonial-card__text">
+                        I'm a real estate agent and needed a last minute cleaner for a client of mine. When I called, they answered and squeezed me in for the next day. Communication and value were top notch. Would definitely recommend.
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">D</div>
+                        <div>
+                            <div class="testimonial-card__name">Daniel U.</div>
+                            <div class="testimonial-card__role">Real Estate Agent</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" data-index="2">
+                    <div class="testimonial-card__stars">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="testimonial-card__quote-mark">"</div>
+                    <p class="testimonial-card__text">
+                        Absolutely incredible work! Our Airbnb gets consistent 5-star reviews on cleanliness since we started working with Grimes & Company. They are reliable, thorough, and always go the extra mile. Highly recommend for any rental property owner.
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">M</div>
+                        <div>
+                            <div class="testimonial-card__name">Maria T.</div>
+                            <div class="testimonial-card__role">Airbnb Host</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Dots -->
+            <div class="testimonials__dots" id="testimonial-dots">
+                <button class="testimonials__dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="testimonials__dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="testimonials__dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         LOCATION / CONTACT
+         ═══════════════════════════════════════════════════ -->
+    <section class="location section" id="location">
+        <div class="container">
+            <div class="location__grid">
+                <div class="location__content reveal">
+                    <span class="section-label">Find Us</span>
+                    <h2>Serving All of Arizona</h2>
+                    <p>Based in Queen Creek, we proudly serve the greater Phoenix metro area including Gilbert, Mesa, Chandler, and surrounding communities.</p>
+
+                    <div class="location__details" id="contact">
+                        <div class="location__detail">
+                            <div class="location__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div class="location__detail-text">
+                                <h4>Location</h4>
+                                <p>Queen Creek, Arizona</p>
+                            </div>
+                        </div>
+
+                        <div class="location__detail">
+                            <div class="location__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div class="location__detail-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:480-327-9508">480-327-9508</a></p>
+                            </div>
+                        </div>
+
+                        <div class="location__detail">
+                            <div class="location__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="location__detail-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:tatum@thegrimesandcompany.com">tatum@thegrimesandcompany.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location__map reveal reveal-delay-1" id="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53337.01534258701!2d-111.67!3d33.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba9774cf5d73f%3A0xa11d7d7a8e7f1b5e!2sQueen%20Creek%2C%20AZ!5e0!3m2!1sen!2sus!4v1"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Grimes & Company location - Queen Creek, Arizona"
+                        id="map-iframe">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <!-- Brand -->
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="images/logo.jpg" alt="Grimes & Co Logo">
+                        <span class="footer__brand-name">Grimes <span>&</span> Co.</span>
+                    </div>
+                    <p class="footer__brand-text">
+                        Family run and owned Arizona cleaning company. Our goal is to clean all of Arizona, one day at a time.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com" class="footer__social-link" aria-label="Instagram" id="footer-instagram" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com" class="footer__social-link" aria-label="Facebook" id="footer-facebook" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <div class="footer__links">
+                        <a href="#hero" class="footer__link" id="footer-home">Home</a>
+                        <a href="#about" class="footer__link" id="footer-about">About Us</a>
+                        <a href="#services" class="footer__link" id="footer-services">Services</a>
+                        <a href="#testimonials" class="footer__link" id="footer-testimonials">Testimonials</a>
+                        <a href="#location" class="footer__link" id="footer-location">Locations</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="footer__heading">Services</h4>
+                    <div class="footer__links">
+                        <a href="#services" class="footer__link" id="footer-str">Short Term Rentals</a>
+                        <a href="#services" class="footer__link" id="footer-residential">Residential</a>
+                        <a href="#services" class="footer__link" id="footer-commercial">Commercial</a>
+                        <a href="#services" class="footer__link" id="footer-deep-clean">Deep Cleaning</a>
+                        <a href="#services" class="footer__link" id="footer-move">Move In/Out</a>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="footer__heading">Contact Us</h4>
+                    <div class="footer__links">
+                        <a href="tel:480-327-9508" class="footer__link" id="footer-phone">480-327-9508</a>
+                        <a href="mailto:tatum@thegrimesandcompany.com" class="footer__link" id="footer-email">tatum@thegrimesandcompany.com</a>
+                        <span class="footer__link">Queen Creek, Arizona</span>
+                    </div>
+                    <a href="#contact" class="btn btn--gold" style="margin-top: 1.5rem; font-size: 0.75rem; padding: 0.7rem 1.5rem;" id="footer-book-btn">Book a Clean</a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 The Grimes & Company. All rights reserved.
+                </p>
+                <div class="footer__bottom-links">
+                    <a href="#" class="footer__bottom-link" id="footer-privacy">Privacy Policy</a>
+                    <a href="#" class="footer__bottom-link" id="footer-terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ═══════════════════════════════════════════════════
+         JAVASCRIPT
+         ═══════════════════════════════════════════════════ -->
+    <script src="script.js"></script>
+</body>
+</html>

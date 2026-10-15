@@ -1,0 +1,11 @@
+# Raw photo originals (not used by the site)
+images/drive-download-*/
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+
+# Vercel
+.vercel
